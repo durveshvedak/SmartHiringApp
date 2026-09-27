@@ -1,10 +1,10 @@
-from django.conf.urls import url
+from django.urls import re_path
 from . import views
 
 urlpatterns=[
-    #url(r'^', views.index, name='index'),
-    url(r'^index2/', views.index2, name='index3'),
-    url(r'^choices/', views.choices, name='choices'),
-    url(r'^$', views.index,name='index'),
-    url(r'^logout/', views.logout,name='logout'),
+    #re_path(r'^', views.index, name='index'),
+    re_path(r'^index2/', views.index2, name='index3'),
+    re_path(r'^choices/', views.choices, name='choices'),
+    re_path(r'^$', views.index,name='index'),
+    re_path(r'^logout/', views.logout,name='logout'),
     ]
